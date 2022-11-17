@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClothingGender"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        style="@style/productName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Clothing Section"
+        android:layout_margin="5dp"
+        android:background="@color/blue"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageButton
+            android:id="@+id/manButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Man's Store"
+            android:scaleType="centerInside" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="Men Section"
+            android:textSize="20sp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageButton
+            android:id="@+id/womanButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Man's Store"
+            android:scaleType="centerInside" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="Woman Section"
+            android:textSize="20sp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
